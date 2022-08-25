@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.Link img {
+  width: 100%;
+}
+.Link {
+  position: fixed;
+  width: 100px;
+  float: right;
+  padding-left: 20px;
+}
+.link {
+  text-align: center;
+  background-color: bisque;
+}
+header {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: large;
+  background-color: rgb(238, 157, 37);
+  line-height: 100px;
+  margin-bottom: 50px;
+}
+.Menu {
+  width: 30px;
+  padding: 50px;
+  cursor: pointer;
+}
+.Menu_side {
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  font-size: large;
+  font-weight: 600;
+  padding-left: 50;
+}
+.Menu :hover {
+  color: rgb(233, 14, 14);
+}
+
+main.index {
+  width: 55%;
+  margin-left: 10%;
+  height: 495px;
+  background-color: bisque;
+  text-align: center;
+  float: left;
+  /*border: 1px solid black;*/
+}
+main {
+  width: 80%;
+  margin-left: 10%;
+  height: 495px;
+  background-color: bisque;
+  text-align: center;
+  float: left;
+}
+aside {
+  width: 25%;
+  height: 495px;
+  background-color: bisque;
+  float: left;
+}
+.header_side {
+  width: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+.paragraph_side {
+  width: 100%;
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+.emptyField {
+  width: 100%;
+  height: 50px;
+  background-color: bisque;
+  float: left;
+}
+.main2 {
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+  margin-top: 60px;
+  height: 400px;
+  padding-top: 5px;
+  background-color: bisque;
+  float: left;
+}
+
+.main_img img {
+  width: 32%;
+  height: 300px;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: left;
+}
+.botton {
+  font-size: larger;
+  color: azure;
+  background-color: rgb(206, 144, 52);
+}
+footer {
+  padding-top: 40px;
+  float: left;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  margin-top: 40px;
+  background-color: rgb(238, 157, 37);
+  border: 1px solid black;
+}
+.Name {
+  float: right;
+  width: 30%;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+}
+.tel {
+  width: 30%;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  float: right;
+}
+.doar {
+  width: 30%;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.pic_main img {
+  width: 100%;
+}
+.LinkToAbout {
+  width: 80%;
+  padding: 50px;
+  text-align: right;
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.about_Main {
+  width: 60%;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+#about {
+  width: 80%;
+  margin-left: 10%;
+  height: 500px;
+  color: rgb(226, 241, 241);
+  background-color: rgba(238, 141, 51, 0.658);
+  text-align: center;
+  float: left;
+  padding-top: 40px;
+  background-image: url(pic/bazek.jpg);
+  background-size: cover;
+}
+#contact {
+  /* width: 80%;
+  margin-left: 10%; */
+  padding-top: 40px;
+  height: 500px;
+  color: rgb(226, 241, 241);
+  background-color: rgba(238, 141, 51, 0.658);
+  text-align: center;
+  float: left;
+  background-image: url("/pic/bazek.jpg") no-repeat center top;
+  height: 100hv;
+  background-size: cover;
+}
+.Text {
+  width: 40%;
+  height: 100px;
+  text-align: center;
+  float: right;
+  padding-right: 200px;
+  padding-top: 100px;
+  /* background-color: aqua; */
+}
+.form {
+  width: 30%;
+  float: right;
+  text-align: right;
+  font-size: 20px;
+  /* padding-right: 50px ; */
+}
+#products {
+  width: 80%;
+  margin-left: 10%;
+  height: 650px;
+  background-color: rgba(238, 141, 51, 0.658);
+  text-align: center;
+  float: left;
+  padding-top: 10px;
+}
