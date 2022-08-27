@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  background-color: antiquewhite;
 }
 .Link img {
   width: 100%;
@@ -27,45 +28,32 @@ header {
   line-height: 100px;
   margin-bottom: 50px;
 }
-.Menu {
-  width: 30px;
-  padding: 50px;
-  cursor: pointer;
+a.Menu {
+  background-color: rgb(238, 157, 37);
 }
-.Menu_side {
-  height: 30px;
-  text-align: center;
-  cursor: pointer;
-  font-size: large;
-  font-weight: 600;
-  padding-left: 50;
-}
-.Menu :hover {
+header :hover {
   color: rgb(233, 14, 14);
 }
-
-main.index {
-  width: 55%;
-  margin-left: 10%;
-  height: 495px;
-  background-color: bisque;
-  text-align: center;
-  float: left;
-  /*border: 1px solid black;*/
+.link:hover {
+  color: rgb(233, 14, 14);
+  background-color: rgb(238, 157, 37);
 }
-main {
-  width: 80%;
-  margin-left: 10%;
-  height: 495px;
-  background-color: bisque;
+
+.main {
+  width: 55%;
   text-align: center;
   float: left;
+  padding-left: 5%;
+}
+.Main_image img {
+  width: 100%;
 }
 aside {
-  width: 25%;
-  height: 495px;
-  background-color: bisque;
+  width: 30%;
+  padding-right: 5%;
+  background-color: antiquewhite;
   float: left;
+  padding-bottom: 5%;
 }
 .header_side {
   width: 100%;
@@ -82,24 +70,38 @@ aside {
   font-size: 18px;
   font-weight: 400;
   padding-top: 10px;
+  padding-bottom: 10%;
 }
-.emptyField {
+.MainGallery {
+  float: left;
+  width: 98%;
+  float: left;
+  margin: 1%;
+  background-color: antiquewhite;
+}
+.MainGalleryTittle {
   width: 100%;
-  height: 50px;
-  background-color: bisque;
-  float: left;
-}
-.main2 {
-  width: 80%;
   text-align: center;
-  margin-left: 10%;
-  margin-top: 60px;
-  height: 400px;
-  padding-top: 5px;
-  background-color: bisque;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 26px;
+  padding-top: 2%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  color: brown;
   float: left;
 }
-
+.MainGalleryPic {
+  width: 32%;
+  float: left;
+  margin-left: 1%;
+}
+.MainGalleryPic img {
+  width: 100%;
+}
+.MainGalleryPicTitle {
+  text-align: center;
+  margin-top: 5%;
+}
 .main_img img {
   width: 32%;
   height: 300px;
@@ -107,11 +109,6 @@ aside {
   padding-top: 10px;
   padding-bottom: 10px;
   float: left;
-}
-.botton {
-  font-size: larger;
-  color: azure;
-  background-color: rgb(206, 144, 52);
 }
 footer {
   padding-top: 40px;
@@ -129,6 +126,7 @@ footer {
   font-size: 20px;
   font-weight: 600;
   text-align: left;
+  background-color: rgb(238, 157, 37);
 }
 .tel {
   width: 30%;
@@ -136,27 +134,31 @@ footer {
   font-weight: 600;
   text-align: left;
   float: right;
+  background-color: rgb(238, 157, 37);
 }
 .doar {
   width: 30%;
   font-size: 20px;
   font-weight: 600;
   text-align: right;
+  background-color: rgb(238, 157, 37);
 }
 
 .pic_main img {
   width: 100%;
 }
 .LinkToAbout {
-  width: 80%;
-  padding: 50px;
-  text-align: right;
+  width: 100%;
   text-align: right;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
 }
+a.LinkToAbout:hover {
+  color: rgb(233, 14, 14);
+  background-color: rgb(238, 157, 37);
+}
+
 .about_Main {
   width: 60%;
   text-align: left;
@@ -167,30 +169,21 @@ footer {
   padding-right: 20%;
   padding-left: 20%;
 }
-#about {
+.about {
   width: 80%;
   margin-left: 10%;
-  height: 500px;
-  color: rgb(226, 241, 241);
-  background-color: rgba(238, 141, 51, 0.658);
   text-align: center;
   float: left;
   padding-top: 40px;
   background-image: url(pic/bazek.jpg);
   background-size: cover;
 }
-#contact {
-  /* width: 80%;
+.contact {
+   width: 80%;
   margin-left: 10%; */
   padding-top: 40px;
-  height: 500px;
-  color: rgb(226, 241, 241);
-  background-color: rgba(238, 141, 51, 0.658);
   text-align: center;
   float: left;
-  background-image: url("/pic/bazek.jpg") no-repeat center top;
-  height: 100hv;
-  background-size: cover;
 }
 .Text {
   width: 40%;
@@ -199,21 +192,48 @@ footer {
   float: right;
   padding-right: 200px;
   padding-top: 100px;
-  /* background-color: aqua; */
 }
 .form {
   width: 30%;
   float: right;
   text-align: right;
   font-size: 20px;
-  /* padding-right: 50px ; */
 }
-#products {
-  width: 80%;
-  margin-left: 10%;
-  height: 650px;
-  background-color: rgba(238, 141, 51, 0.658);
-  text-align: center;
+.send{
+  width: 70px;
+  height: 40px;
+  background-color: rgb(238, 157, 37);
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 25%;
+
+}
+.send:hover{
+  background-color: aqua;
+  color: red;
+ 
+}
+.ProductsGallery {
+  width: 100%;
   float: left;
-  padding-top: 10px;
+  background-color: antiquewhite;
+}
+.ProductsGalleryTittle {
+  color: rgb(204, 39, 94);
+  text-align: center;
+  width: 100%;
+  font-size: x-large;
+}
+.ProductsGalleryPic {
+  width: 32%;
+  float: left;
+  margin-left: 1%;
+  margin-top: 2%;
+}
+.ProductsGalleryPic img {
+  width: 100%;
+}
+.ProductsGalleryPicTitle {
+  text-align: center;
+  /* margin-top: 5%; */
 }
