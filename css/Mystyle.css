@@ -49,14 +49,21 @@ header :hover {
   .menu {
     flex-basis: 25%;
   }
+  .General {
+    flex-direction: column;
+  }
+  .main {
+    flex-basis: 75%;
+  }
+  aside {
+    padding-right: 5%;
+  }
 }
-.General{
+.General {
   display: flex;
-  justify-content: center;
-
 }
 .main {
-  width: 55%;
+  flex-basis: 55%;
   text-align: center;
   float: left;
   padding-left: 5%;
@@ -66,10 +73,8 @@ header :hover {
 }
 
 aside {
-  width: 30%;
-  padding-right: 5%;
+  flex-basis: 30%;
   background-color: antiquewhite;
-  float: left;
   padding-bottom: 5%;
 }
 .header_side {
@@ -89,6 +94,22 @@ aside {
   padding-top: 10px;
   padding-bottom: 10%;
 }
+@media (max-width: 650px) {
+  header {
+    flex-direction: row-reverse;
+  }
+  .menu {
+    flex-basis: 25%;
+  }
+  .General {
+    flex-direction: column;
+  }
+  .main {
+    flex-basis: 75%;
+    padding-right: 5%;
+  }
+}
+
 .MainGallery {
   display: flex;
   flex-direction: row;
@@ -121,6 +142,7 @@ aside {
   .MainGallery {
     padding-left: 10%;
     flex-direction: column;
+    padding-right: 10%;
   }
   .MainGalleryPic {
     flex-basis: 100%;
@@ -184,30 +206,40 @@ a.LinkToAbout:hover {
   background-image: url(pic/bazek.jpg);
   background-size: cover;
 }
-.contact {
+
+.contcat_form {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+/* .contact {
   width: 80%;
   margin-left: 10%;
   padding-top: 40px;
   text-align: center;
   float: left;
-}
+} */
+
 .Text {
-  width: 40%;
+  /* width: 40%; */
   height: 100px;
   text-align: center;
-  float: right;
-  padding-right: 200px;
+  flex-basis: 20%;
+  /* float: right; */
+  /* padding-right: 200px; */
   padding-top: 100px;
 }
 .form {
-  width: 30%;
-  float: right;
+  /* width: 30%; */
+  /* float: right; */
   text-align: right;
   font-size: 20px;
+  flex-basis: 30%;
 }
 .send {
   width: 70px;
   height: 40px;
+  flex-basis: 30%;
   background-color: rgb(238, 157, 37);
   font-weight: 500;
   font-size: 18px;
