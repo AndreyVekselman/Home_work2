@@ -1,6 +1,8 @@
 * {
   padding: 0;
   margin: 0;
+}
+body {
   background-color: antiquewhite;
 }
 .Link img {
@@ -17,18 +19,20 @@
   background-color: bisque;
 }
 header {
-  height: 100px;
-  width: 100%;
-  text-align: center;
-  border: 1px solid black;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(238, 157, 37);
+  flex-direction: row-reverse;
+  padding-top: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   font-size: large;
-  background-color: rgb(238, 157, 37);
-  line-height: 100px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
 }
-a.Menu {
+.menu {
+  flex-basis: 10%;
+  text-align: center;
   background-color: rgb(238, 157, 37);
 }
 header :hover {
@@ -37,6 +41,14 @@ header :hover {
 .link:hover {
   color: rgb(233, 14, 14);
   background-color: rgb(238, 157, 37);
+}
+@media (max-width: 650px) {
+  header {
+    flex-direction: row-reverse;
+  }
+  .menu {
+    flex-basis: 25%;
+  }
 }
 
 .main {
@@ -48,6 +60,7 @@ header :hover {
 .Main_image img {
   width: 100%;
 }
+
 aside {
   width: 30%;
   padding-right: 5%;
@@ -73,11 +86,11 @@ aside {
   padding-bottom: 10%;
 }
 .MainGallery {
-  float: left;
-  width: 98%;
-  float: left;
-  margin: 1%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-color: antiquewhite;
+  padding-left: 10%;
 }
 .MainGalleryTittle {
   width: 100%;
@@ -91,57 +104,46 @@ aside {
   float: left;
 }
 .MainGalleryPic {
-  width: 32%;
-  float: left;
-  margin-left: 1%;
+  flex-basis: 30%;
 }
 .MainGalleryPic img {
   width: 100%;
 }
 .MainGalleryPicTitle {
   text-align: center;
-  margin-top: 5%;
+  margin-bottom: 5%;
 }
-.main_img img {
-  width: 32%;
-  height: 300px;
-  padding-left: 5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  float: left;
+@media (max-width: 550px) {
+  .MainGallery {
+    padding-left: 10%;
+    flex-direction: column;
+  }
+  .MainGalleryPic {
+    flex-basis: 100%;
+  }
 }
+
 footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row-reverse;
   padding-top: 40px;
-  float: left;
-  width: 100%;
   height: 50px;
-  text-align: center;
   margin-top: 40px;
   background-color: rgb(238, 157, 37);
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+  /* justify-content: center; */
+  width: 100%;
 }
-.Name {
-  float: right;
-  width: 30%;
-  font-size: 20px;
+.foot {
+  font-size: 15px;
   font-weight: 600;
-  text-align: left;
-  background-color: rgb(238, 157, 37);
-}
-.tel {
-  width: 30%;
-  font-size: 20px;
-  font-weight: 600;
-  text-align: left;
-  float: right;
-  background-color: rgb(238, 157, 37);
-}
-.doar {
-  width: 30%;
-  font-size: 20px;
-  font-weight: 600;
-  text-align: right;
-  background-color: rgb(238, 157, 37);
+  flex-basis: 18%;
+  text-align: center;
+  padding-left: 10px;
 }
 
 .pic_main img {
@@ -179,8 +181,8 @@ a.LinkToAbout:hover {
   background-size: cover;
 }
 .contact {
-   width: 80%;
-  margin-left: 10%; */
+  width: 80%;
+  margin-left: 10%;
   padding-top: 40px;
   text-align: center;
   float: left;
@@ -199,24 +201,22 @@ a.LinkToAbout:hover {
   text-align: right;
   font-size: 20px;
 }
-.send{
+.send {
   width: 70px;
   height: 40px;
   background-color: rgb(238, 157, 37);
   font-weight: 500;
   font-size: 18px;
   border-radius: 25%;
-
 }
-.send:hover{
+.send:hover {
   background-color: aqua;
   color: red;
- 
 }
 .ProductsGallery {
-  width: 100%;
-  float: left;
   background-color: antiquewhite;
+  display: flex;
+  flex-wrap: wrap;
 }
 .ProductsGalleryTittle {
   color: rgb(204, 39, 94);
@@ -225,8 +225,7 @@ a.LinkToAbout:hover {
   font-size: x-large;
 }
 .ProductsGalleryPic {
-  width: 32%;
-  float: left;
+  flex-basis: 32%;
   margin-left: 1%;
   margin-top: 2%;
 }
@@ -235,5 +234,12 @@ a.LinkToAbout:hover {
 }
 .ProductsGalleryPicTitle {
   text-align: center;
-  /* margin-top: 5%; */
+}
+@media (max-width: 550px) {
+  .ProductGallery {
+    flex-direction: column;
+  }
+  .ProductsGalleryPic {
+    flex-basis: 100%;
+  }
 }

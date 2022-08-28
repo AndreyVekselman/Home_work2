@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/Mystyle.css" />
     <meta name="description" content="אתר מאפיה של איציק " />
     <meta name="keywords" content="מאפייה, איציק,שכונת שלום " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <div class="Link">
@@ -14,10 +15,12 @@
       </a>
     </div>
     <header>
-      <a class="Menu" href="index.html"> דף הבית</a>|
-      <a class="Menu" href="about.html"> אודות </a>|
-      <a class="Menu" href="products.html"> מאפים שלנו </a>|
-      <a class="Menu" href="contact.html"> צור קשר </a>
+      <div class="menu"><a href="index.html"> דף הבית</a></div>
+      <div class="menu"><a href="about.html"> אודות </a></div>
+      <div class="menu">
+        <a href="products.html"> מאפים שלנו </a>
+      </div>
+      <div class="menu"><a href="contact.html"> צור קשר </a></div>
     </header>
     <!-- <div class="MainPage"> -->
     <div class="main">
@@ -43,10 +46,10 @@
         <a class="LinkToAbout" href="about.html"> אודותנו</a>
       </div>
     </aside>
+    <div class="MainGalleryTittle">
+      <h3>מאפים שלנו</h3>
+    </div>
     <div class="MainGallery">
-      <div class="MainGalleryTittle">
-        <h3>מאפים שלנו</h3>
-      </div>
       <div class="MainGalleryPic">
         <img src="pic/black_bread.jpg" alt="black_bread" />
         <div class="MainGalleryPicTitle">
@@ -71,9 +74,9 @@
     </div>
 
     <footer>
-      <span class="Name"> מאפייה של איציק </span>
-      <span class="tel"> Tel: (972) 08-123123 </span>
-      <span class="doar"> Itzik@gmail.com</span>
+      <div class="Name, foot">מאפייה של איציק</div>
+      <div class="tel, foot">Tel: (972) 08-123123</div>
+      <div class="doar, foot">Itzik@gmail.com</div>
     </footer>
   </body>
 </html>
