@@ -50,7 +50,11 @@ header :hover {
     flex-basis: 25%;
   }
 }
+.General{
+  display: flex;
+  justify-content: center;
 
+}
 .main {
   width: 55%;
   text-align: center;
