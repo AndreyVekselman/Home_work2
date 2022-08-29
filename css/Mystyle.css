@@ -42,23 +42,6 @@ header :hover {
   color: rgb(233, 14, 14);
   background-color: rgb(238, 157, 37);
 }
-@media (max-width: 650px) {
-  header {
-    flex-direction: row-reverse;
-  }
-  .menu {
-    flex-basis: 25%;
-  }
-  .General {
-    flex-direction: column;
-  }
-  .main {
-    flex-basis: 75%;
-  }
-  aside {
-    padding-right: 5%;
-  }
-}
 .General {
   display: flex;
 }
@@ -94,21 +77,6 @@ aside {
   padding-top: 10px;
   padding-bottom: 10%;
 }
-@media (max-width: 650px) {
-  header {
-    flex-direction: row-reverse;
-  }
-  .menu {
-    flex-basis: 25%;
-  }
-  .General {
-    flex-direction: column;
-  }
-  .main {
-    flex-basis: 75%;
-    padding-right: 5%;
-  }
-}
 
 .MainGallery {
   display: flex;
@@ -137,16 +105,6 @@ aside {
 .MainGalleryPicTitle {
   text-align: center;
   margin-bottom: 5%;
-}
-@media (max-width: 550px) {
-  .MainGallery {
-    padding-left: 10%;
-    flex-direction: column;
-    padding-right: 10%;
-  }
-  .MainGalleryPic {
-    flex-basis: 100%;
-  }
 }
 
 footer {
@@ -263,5 +221,73 @@ a.LinkToAbout:hover {
   }
   .ProductsGalleryPic {
     flex-basis: 100%;
+  }
+  .MainGallery {
+    padding-left: 10%;
+    flex-direction: column;
+    padding-right: 10%;
+  }
+  .MainGalleryPic {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .menu {
+    flex-basis: 25%;
+  }
+  .General {
+    flex-direction: column;
+  }
+  aside {
+    padding-right: 5%;
+  }
+  header {
+    flex-direction: row-reverse;
+  }
+  .menu {
+    flex-basis: 25%;
+  }
+  .General {
+    flex-direction: column;
+  }
+  .main {
+    flex-basis: 75%;
+    padding-right: 5%;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-color: rgb(213, 219, 119);
+  }
+  header {
+    background-color: rgba(155, 65, 65, 0.466);
+  }
+  footer {
+    background-color: rgba(155, 65, 65, 0.466);
+    color: white;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-color: rgba(226, 208, 43, 0.74);
+  }
+  header {
+    background-color: rgba(155, 65, 65, 0.466);
+  }
+  footer {
+    background-color: rgba(155, 65, 65, 0.466);
+    color: white;
+  }
+}
+@media (max-width: 800px) {
+  body {
+    background-color: rgba(43, 226, 104, 0.74);
+  }
+  header {
+    background-color: rgba(121, 155, 65, 0.466);
+  }
+  footer {
+    background-color: rgba(74, 65, 155, 0.466);
+    color: white;
   }
 }
